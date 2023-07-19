@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* google font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to right, #4e4376, #2b5876);
+}
+
+
+/* common css ends */
+
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* header part start */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 5vh;
+    padding: 0 3vw;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* header part ends */
+
+
+/* main section start */
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main h1 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    font-size: 26px;
+}
+
+
+/* design for counter */
+
+
+/* countdown */
+
+#countdown .timer .cnt_row {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+#countdown .timer .cnt_row div {
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+#countdown .timer h3 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#countdown .timer p {
+    color: #f0f0f0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* countdown */
+
+main p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    border: 1px solid #ffffff;
+    outline: 0;
+    padding: 15px;
+    width: 40vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+form button {
+    border: 1px solid #ffffff;
+    outline: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+form button:focus {
+    outline: 0;
+}
+
+
+/* main section ends */
+
+
+/* footer part start */
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 3vh;
+    padding: 0 3vw;
+}
+
+footer .flex-box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.social-links {
+    flex-basis: 50%;
+}
+
+.social-links ul {
+    display: flex;
+}
+
+.social-links ul li {
+    margin-right: 30px;
+}
+
+.social-links ul li a {
+    color: #ffffff;
+    font-size: 25px;
+    transition: all linear 0.3s;
+}
+
+.copy-right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+
+/* footer part ends */
+
+@media (max-width: 1199.98px) {
+    main h1 {
+        font-size: 42px;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+    #countdown .timer .cnt_row div {
+        padding: 0 20px;
+    }
+    #countdown .timer h3 {
+        font-size: 50px;
+    }
+    #countdown .timer p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    main h1 {
+        font-size: 36px;
+    }
+    main h2 {
+        font-size: 18px;
+    }
+    #countdown .timer .cnt_row div {
+        padding: 0 20px;
+    }
+    #countdown .timer h3 {
+        font-size: 50px;
+    }
+    #countdown .timer p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    main h1 {
+        font-size: 32px;
+    }
+    main h2 {
+        font-size: 16px;
+    }
+    #countdown .timer h3 {
+        font-size: 45px;
+    }
+    #countdown .timer p {
+        font-size: 18px;
+    }
+    .social-links ul li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    main h1 {
+        font-size: 26px;
+    }
+    main h2 {
+        font-size: 14px;
+    }
+    #countdown .timer .cnt_row div {
+        padding: 0 15px;
+    }
+    #countdown .timer h3 {
+        font-size: 30px;
+    }
+    #countdown .timer p {
+        font-size: 16px;
+    }
+    footer .flex-box {
+        height: 75px;
+        flex-direction: column;
+    }
+    .copy-right {
+        text-align: center;
+    }
+}
+
+
+/* responsive design ends */

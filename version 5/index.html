@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Page 01</title>
+</head>
+
+<body>
+    <!-- this wraper is a flex element -->
+    <div class="wraper">
+        <!-- header start / have no css in css file -->
+        <header>
+            <nav class="d-flex justify-content-center">
+                <a href="#"><img src="images/logo1.png" alt="logo"></a>
+            </nav>
+        </header>
+        <!-- header ends -->
+        <!-- main section start -->
+        <main>
+            <div class="container text-center text-white">
+                <h1 class="display-3 font-weight-bold">Opening Soon</h1>
+                <h2 class="font-weight-bold">Never miss an update, join beta Subscriber now</h2>
+                <div class="button">
+                    <!-- open modal -->
+                    <a href="#" data-toggle="modal" data-target="#exampleModalCenter">SUBSCRIBE</a>
+                    <span class="circle1"></span>
+                    <span class="circle2"></span>
+                </div>
+                <!-- modal start -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!-- SUBSCRIBE form -->
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <label><i class="far fa-bell"></i></label>
+                                        </div>
+                                        <div class="col-12">
+                                            <h3 id="exampleModalCenterTitle">SUBSCRIBE NOW</h3>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <input type="text" placeholder="First name" required>
+                                        </div>
+                                        <div class="col-sm-6 col-12">
+                                            <input type="text" placeholder="Last name" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="email" placeholder="Email" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <!-- submit button -->
+                                            <button type="submit">SUBSCRIBE</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- modal close -->
+                                <button type="button" data-dismiss="modal"><i class="far fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main section ends -->
+        <!-- footer start -->
+        <footer>
+            <ul class="d-flex justify-content-center">
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text-center text-white">All rights reserved &copy; 2020</p>
+        </footer>
+        <!-- footer ends -->
+    </div>
+    <!-- all js file  -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

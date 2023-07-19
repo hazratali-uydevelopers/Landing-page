@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page 02</title>
+</head>
+
+<body>
+    <div id="wraper">
+        <!-- background video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- header part start -->
+        <header>
+            <nav>
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </nav>
+        </header>
+        <!-- header part ends -->
+        <!-- main section start -->
+        <main>
+            <h1>COMING SOON</h1>
+            <h2>We are working hard 24/7 to complete our website</h2>
+            <div id="getting-started"></div>
+            <p>Let us inform you when it's ready</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required><button type="submit">SUBSCRIBE</button>
+            </form>
+        </main>
+        <!-- main section ends -->
+        <!-- footer part start -->
+        <footer>
+            <div class="flex-box">
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-behance-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitch"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy-right">
+                    <p>all rights reserved to <strong>Company Name</strong></p>
+                    <p>&copy; 2020</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer part ends -->
+    </div>
+    <!-- script files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+        $('#getting-started').countdown('2022/01/01', function (event) {
+            $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+        });
+    </script>
+</body>
+
+</html>

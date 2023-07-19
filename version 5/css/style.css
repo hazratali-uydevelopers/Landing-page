@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* google fonts */
+
+@import url('all.min.css');
+
+/* fontawesome icons/ */
+
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+
+/* bootstrapcdn */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* common css ends */
+
+.wraper {
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1 {
+    margin-top: 100px;
+}
+
+main h2 {
+    margin-top: 30px;
+}
+
+/* .button is a div element */
+
+.button {
+    position: relative;
+}
+
+.button a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 40px;
+    border: 1px solid #ffffff;
+    margin: 80px 0;
+    border-radius: 35px;
+    transition: all linear 0.3s .1s;
+}
+
+.button a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* left line */
+
+.button a::before {
+    content: '';
+    width: 250px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+}
+
+/* right line */
+
+.button a::after {
+    content: '';
+    width: 250px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+}
+
+/* left circle */
+
+.circle1 {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translateY(-50%);
+}
+
+/* right circle */
+
+.circle2 {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 400px;
+    transform: translateY(-50%);
+}
+
+/* modal design start */
+
+.modal-body {
+    height: 475px;
+}
+
+/* this is the bell icon */
+
+.modal-body form label {
+    color: #000000;
+    font-size: 100px;
+}
+
+/* modal header */
+
+.modal-body form h3 {
+    color: #000000;
+    font-size: 30px;
+}
+
+.modal-body form input[type="text"] {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.modal-body form input[type="text"]::placeholder {
+    color: #000000;
+}
+
+.modal-body form input[type="text"]:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.modal-body form input[type="email"] {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.modal-body form input[type="email"]::placeholder {
+    color: #000000;
+}
+
+.modal-body form input[type="email"]:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.modal-body form button[type="submit"] {
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* this button close the modal */
+
+.modal-body button[type="button"] {
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+}
+
+/* modal design ends */
+
+/* footer design start */
+
+footer ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    transition: all linear 0.3s .1s;
+}
+
+footer p {
+    margin-top: 15px;
+}
+
+/* footer design ends */
+
+/* responsive style start */
+
+@media (min-width: 1200px) {
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .button a::before {
+        width: 200px;
+        left: 100px;
+    }
+
+    .button a::after {
+        width: 200px;
+        right: 100px;
+    }
+
+    .circle1 {
+        left: 300px;
+    }
+
+    .circle2 {
+        right: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .button a::before {
+        width: 150px;
+        left: 50px;
+    }
+
+    .button a::after {
+        width: 150px;
+        right: 50px;
+    }
+
+    .circle1 {
+        left: 200px;
+    }
+
+    .circle2 {
+        right: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    main h1 {
+        margin-top: 30px;
+        font-size: 3.5rem !important;
+    }
+
+    main h2 {
+        margin-top: 15px;
+        font-size: 1.25rem;
+    }
+
+    .button a {
+        margin: 40px 0;
+    }
+
+    .button a::before {
+        width: 150px;
+        left: -50px;
+    }
+
+    .button a::after {
+        width: 150px;
+        right: -50px;
+    }
+
+    .modal-body {
+        height: 380px;
+    }
+
+    .modal-body form label {
+        font-size: 80px;
+    }
+
+    .modal-body form h3 {
+        font-size: 24px;
+    }
+
+    .modal-body form input[type="text"] {
+        margin-top: 20px;
+    }
+
+    .modal-body form input[type="email"] {
+        margin-top: 20px;
+    }
+
+    .modal-body form button[type="submit"] {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    main h1 {
+        margin-top: 30px;
+        font-size: 2.5rem !important;
+    }
+
+    main h2 {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+    .button a {
+        margin: 40px 0;
+    }
+
+    .button a::before {
+        display: none;
+    }
+
+    .button a::after {
+        display: none;
+    }
+
+    .circle1 {
+        display: none;
+    }
+
+    .circle2 {
+        display: none;
+    }
+
+    .modal-body {
+        height: 400px;
+    }
+
+    .modal-body form label {
+        font-size: 60px;
+    }
+
+    .modal-body form h3 {
+        font-size: 20px;
+    }
+
+    .modal-body form input[type="text"] {
+        margin-top: 15px;
+    }
+
+    .modal-body form input[type="email"] {
+        margin-top: 15px;
+    }
+
+    .modal-body form button[type="submit"] {
+        margin-top: 15px;
+    }
+}
+
+/* responsive style end */
